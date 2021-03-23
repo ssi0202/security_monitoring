@@ -1,5 +1,6 @@
 <Sysmon schemaversion="4.22">
   <!-- Capture all hashes -->
+  <!-- Forked from SwiftonSecurity -->
   <HashAlgorithms>*</HashAlgorithms>
   <CheckRevocation />
   <EventFiltering>
