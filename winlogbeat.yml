@@ -180,7 +180,3 @@ output.elasticsearch:
   bulk_max_size: 200
   worker: 1
   protocol: https
-#processors:
-#  - add_host_metadata:
-#      when.not.contains.tags: forwarded
-#  - add_cloud_metadata: null
