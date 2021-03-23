@@ -173,9 +173,8 @@ winlogbeat.event_logs:
   - name: Microsoft-Windows-WLAN-AutoConfig/Operational
     event_id: 8003, 10000, 10001, 8000, 8011, 8001, 11000, 11001, 11002, 12011, 12012, 12013, 8002, 11004, 11005, 11010, 11006
 output.elasticsearch:
-  hosts:
-    - 'https://cloud.humio.com:443/api/v1/ingest/elastic-bulk'
-  password: [YOUR INGEST TOKEN (repo specific)]
+  hosts: ["https://cloud.humio.com:443/api/v1/ingest/elastic-bulk"]
+  password: YOUR INGEST TOKEN (repo specific)
   compression_level: 5
   bulk_max_size: 200
   worker: 1
