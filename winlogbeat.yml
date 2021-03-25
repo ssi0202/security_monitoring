@@ -121,13 +121,13 @@ winlogbeat.event_logs:
   - name: Microsoft-Windows-TaskScheduler/Operational
     event_id: 106, 141, 142, 200
   - name: Microsoft-Windows-DNS-Client/Operational
-    event_id: '3008, 3020'
+    event_id: 3008, 3020
   - name: Microsoft-Windows-DNSServer/Analytical
     event_id: 256, 257
   - name: Microsoft-Windows-MPRMSG
     event_id: 20250, 20274, 20275
   - name: Microsoft-Windows-CertificateServicesClientLifecycle-System
-    event_id: '1006, 1004, 1007, 1003, 1001, 1002'
+    event_id: 1006, 1004, 1007, 1003, 1001, 1002
   - name: Microsoft-Windows-Bits-Client/Operational
   - name: Microsoft-Windows-Ntfs/Operational
   - name: Microsoft-Windows-Kernel-ShimEngine/Operational
