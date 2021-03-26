@@ -31,7 +31,7 @@ winlogbeat.event_logs:
     event_id: 1518, 1511, 1000, 1001, 1002, 95, 1022, 1033
   - name: Setup
     event_id: 2, 1009
-  - name: Security # because there is more than 22 individual eventid's i have to do it this way https://www.elastic.co/guide/en/beats/winlogbeat/current/configuration-winlogbeat-options.html
+  - name: Security # because there is more than 22 individual eventid's i have to do it this way
     processors:
       - drop_event.when.not.or:
         - equals.winlog.event_id: 1100 # 1100: The event logging service has shut down https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventid=1100
