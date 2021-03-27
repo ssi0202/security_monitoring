@@ -122,7 +122,7 @@ winlogbeat.event_logs:
     event_id: 907, 908, 800, 905, 906
   - name: Microsoft-Windows-TerminalServices-RDPClient/Operational # https://www.security-hive.com/post/rdp-forensics-logging-detection-and-forensics
   - name: Microsoft-Windows-TaskScheduler/Operational
-    event_id: 106, 141, 142, 200
+    event_id: 106, 107,108, 110, 140, 141, 142, 200 # added 107, 108, 110, 140 based on this https://www.cyprich.com/2017/03/29/common-task-scheduler-event-ids/
   - name: Microsoft-Windows-DNS-Client/Operational
     event_id: 3008, 3020
   - name: Microsoft-Windows-DNSServer/Analytical
