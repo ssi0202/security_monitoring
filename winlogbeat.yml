@@ -20,8 +20,12 @@
 # Inspired by florian roth auditD config example for linux ( https://github.com/Neo23x0/auditd) I made an similar 
 # effort for the windows platform. Please read the link for nsacyber carefully as addionaly configuration 
 # is needed to ensure full benefit of this configuration. 
+#
 # Some eventid's may not be generated unless specific non standard polices are enabled
+#
 # some log sources may only be relevant for specific types of servers
+#
+# addtionally this monitoring can provide a forensic and incident readiness 
 #
 # config of sysmon and installation of sysmon has to happen seperately from this config
 #
