@@ -149,9 +149,9 @@ winlogbeat.event_logs:
     event_id: 8023, 8020
   - name: Microsoft-Windows-Application-Experience/Program-Inventory
     event_id: 903,904
-  - name: Microsoft-Windows-AppLocker/EXE and DLL
+  - name: Microsoft-Windows-AppLocker/EXE and DLL # usefull for collecting data prior to enforcing any applocker rules, implementing GPO that limit execution from temp folder etc.
     event_id: 8002, 8003, 8004
-  - name: Microsoft-Windows-AppLocker/MSI and Script
+  - name: Microsoft-Windows-AppLocker/MSI and Script # usefulle for collecting data prior to enforcing any block rules or implementing GPO that limits use of this feature
     event_id: 8005, 8006, 8007
   - name: Microsoft-Windows-WinRM/Operational
   - name: Microsoft-Windows-WMI-Activity/Operational
@@ -166,7 +166,7 @@ winlogbeat.event_logs:
     event_id: 4103, 4104, 4105, 4106
   - name: Microsoft-Windows-SoftwareRestrictionPolicies
     event_id: 865, 866, 867, 868, 882
-  - name: Microsoft-Windows-Sysmon/Operational
+  - name: Microsoft-Windows-Sysmon/Operational # must be installed and configured seperately via sysmon config file see inital comments above
   - name: User32
     event_id: 1074
   - name: Microsoft-Windows-WindowsUpdateClient/Operational
