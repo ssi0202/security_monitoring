@@ -179,7 +179,8 @@ winlogbeat.event_logs:
     event_id: 3001, 3002, 3003, 3004, 3010, 3023
   - name: Microsoft-Windows-WLAN-AutoConfig/Operational
     event_id: 8003, 10000, 10001, 8000, 8011, 8001, 11000, 11001, 11002, 12011, 12012, 12013, 8002, 11004, 11005, 11010, 11006
-output.elasticsearch:
+  - name: Microsoft-Windows-Partition/Diagnostic #present win10 1709+ logs USB/drive serials ref https://df-stream.com/2018/05/partition-diagnostic-event-log-and-usb-device-tracking-p1/    
+    event_id: 1006 
 # current config set for humio cloud
 # trial here https://cloud.humio.com/
 # adjust to your need
